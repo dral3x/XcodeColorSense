@@ -16,8 +16,7 @@ class XcodeColorSense: NSObject {
   var textView: NSTextView?
   let previewView = PreviewView(frame: CGRect(origin: CGPointZero, size: CGSize(width: 60, height: 40)))
   let matchers: [Matcher] = [
-    HexStringMatcher(),
-    HexIntMatcher(),
+    HexMatcher(),
     PresetMatcher(),
     RGBAMatcher(),
   ]
